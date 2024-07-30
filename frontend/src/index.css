@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Poppins';
+}
+.workout-details-container {
+    display: flex;
+    justify-content: center;
+    width: calc(50% - 10px); /* Each component takes up half of the container's width with some gap */
+    margin-bottom: 20px; /* Add margin for spacing between components */
+    float: left; /* Ensure components float left to align properly */
+}
+@media (max-width: 425px) {
+    .workout-details-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Take full width in column layout */
+        float: none; /* Reset float in column layout */
+    }
+}
+
+@media (max-width: 640px) {
+    .workout-details-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Take full width in column layout */
+        float: none; /* Reset float in column layout */
+    }
+}
+
+@media (max-width: 768px) {
+    .workout-details-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Take full width in column layout */
+        float: none; /* Reset float in column layout */
+    }
+}
